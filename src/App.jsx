@@ -1,8 +1,11 @@
-function App (){
+import Header from "./Header"
 
-  return(
-    <h1>Olá mundo</h1>
+const App = () => {
+  return (
+    <>
+       <Header />
+    </>
   )
 }
+
 export default App
-re
