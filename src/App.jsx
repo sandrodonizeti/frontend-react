@@ -1,20 +1,15 @@
-import Header from "./Header"
-import Sidebar from "./Sidebar"
-import Content from "./Content"
-import Footer from "./Footer"
+import Home from "./components/pages/Home"
+import QuemSomos from "./components/pages/QuemSomos"
 
 import "./App.css"
+import {Routes, Route} from "react-router-dom"
 
 const App = () => {
   return (
-    <>
-       <Header />
-       <div id="main">
-          <Sidebar />
-          <Content />
-       </div>
-       <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/quem-somos" element={<QuemSomos />}/>
+    </Routes>
   )
 }
 
