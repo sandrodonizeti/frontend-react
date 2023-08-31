@@ -9,8 +9,10 @@ const QuemSomos = () => {
             <Header />
             <div id="main">
                 <Sidebar />
-                <p>Quem Somos e oque fazemos</p>
-                <Content />
+                <Content>
+                    <h1>Vida de programador</h1>
+            
+                </Content>
             </div>
             <Footer />
         </>
