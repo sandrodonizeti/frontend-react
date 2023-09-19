@@ -11,7 +11,8 @@ const Contato = () => {
             <div id="main">
                 <Sidebar />
                 <Content>
-                <h1> Meu contato esta na page</h1>
+                <h1>Contato</h1>
+                <p>Meu contato esta na page</p>
                 </Content>
                
             </div>

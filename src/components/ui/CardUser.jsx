@@ -1,15 +1,15 @@
 import './CardUser.css'
- const cardUser = () => {
+ const CardUser = ({user}) => {
   return (
     <div className="card-user">
-        <img src="" alt="sandro" />
+        <img src={user.photo} alt={user.nome} />
         <div>
-        <h3>Sandro</h3>
-        <span>Sandro.gomes@aluno.edu.ifsp.br</span>
+        <h3>{user.nome}</h3>
+        <span>{user.email}</span>
         </div>
     </div>
    
   )
 }
 
-export default cardUser
+export default CardUser
