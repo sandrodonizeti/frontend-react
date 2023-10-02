@@ -10,7 +10,7 @@ const Home = () => {
             <div id="main">
                 <Sidebar />
                 <Content>
-                    <h1>Estou na home</h1>
+                    <h1>Estou na home😎</h1>
                 </Content>
 
             </div>
