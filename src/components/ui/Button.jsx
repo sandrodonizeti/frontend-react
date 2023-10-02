@@ -1,6 +1,6 @@
 import './Button.css'
 
-const Button =({children, variant, idade}) => {
+const Button =({children, variant}) => {
     return (
       <button className={variant}>{children}</button>
     )
