@@ -38,7 +38,7 @@ const QuemSomos = () => {
         photo: event.target.photo.value
       }
       
-      const response = await fetch('http://localhost:3000/user',{
+      const response = await fetch('http://localhost:3300/user',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ const QuemSomos = () => {
               {
                 users.length > 0 ?
                   users.map((user) => {
-                    return <CardUser key={user.id} user={user} />
+                    return <CardUser key={user.id} user={user} users={users} setUsers={setUsers} />
                   })
                 :
                   <p>Carregando...</p>
