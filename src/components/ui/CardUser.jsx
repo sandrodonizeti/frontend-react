@@ -40,7 +40,7 @@ const CardUser = ({user, users, setUsers}) => {
       email: email,
       photo: photo
     } 
-    const response = await fetch('http://localhost:3000/user',{
+    const response = await fetch('http://localhost:3300/user',{
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

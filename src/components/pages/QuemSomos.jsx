@@ -8,11 +8,11 @@ import Button from "react-bootstrap/Button"
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 
+
 const QuemSomos = () => {
 
     const [users, setUsers] = useState([])
     const [showModal, setShowModal] = useState(false)
-     
 
     useEffect(()=>{
       
@@ -38,7 +38,7 @@ const QuemSomos = () => {
         photo: event.target.photo.value
       }
       
-      const response = await fetch('http://localhost:3300/user',{
+      const response = await fetch('http://localhost:3000/user',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
