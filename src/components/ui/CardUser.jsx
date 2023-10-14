@@ -14,7 +14,7 @@ const CardUser = ({user, users, setUsers}) => {
   const [photo, setPhoto] = useState(user.photo)
 
   const handleDelete = async (id) => {
-    const response = await fetch('http://localhost:3300/user',{
+    const response = await fetch('http://localhost:3000/user',{
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ const CardUser = ({user, users, setUsers}) => {
       email: email,
       photo: photo
     } 
-    const response = await fetch('http://localhost:3300/user',{
+    const response = await fetch('http://localhost:3000/user',{
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
