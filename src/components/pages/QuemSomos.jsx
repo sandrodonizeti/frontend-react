@@ -8,16 +8,16 @@ import Button from "react-bootstrap/Button"
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 
+
 const QuemSomos = () => {
 
     const [users, setUsers] = useState([])
     const [showModal, setShowModal] = useState(false)
-     
 
     useEffect(()=>{
       
       const getUsers = async () => {
-        const response = await fetch('http://localhost:3000/user/list')
+        const response = await fetch('http://localhost:3300/user/list')
         const data = await response.json()
         console.log(data.success)
         console.log(data.users)
@@ -38,7 +38,7 @@ const QuemSomos = () => {
         photo: event.target.photo.value
       }
       
-      const response = await fetch('http://localhost:3000/user',{
+      const response = await fetch('http://localhost:3300/user',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ const QuemSomos = () => {
               {
                 users.length > 0 ?
                   users.map((user) => {
-                    return <CardUser key={user.id} user={user} />
+                    return <CardUser key={user.id} user={user} users={users} setUsers={setUsers} />
                   })
                 :
                   <p>Carregando...</p>
