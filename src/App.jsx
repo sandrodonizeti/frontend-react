@@ -1,3 +1,4 @@
+import React from "react"
 import Home from "./components/pages/Home"
 import QuemSomos from "./components/pages/QuemSomos"
 import Page404 from "./components/pages/Page404"
