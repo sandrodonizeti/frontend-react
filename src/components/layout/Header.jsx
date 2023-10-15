@@ -5,7 +5,7 @@ import Button from '../ui/Button'
 const Header = () => {
   return (
     <header>
-        <h1>Coffee & Mountain</h1>
+        <h1>Nosso Sonho</h1>
         <nav>
             <ul>
                 <li><NavLink to="/">Home</NavLink></li>

@@ -1,0 +1,270 @@
+body {
+    background: #7073f8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #f8f2f2;
+}
+
+.l {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    bottom: 78%;
+    max-width: 24%;
+    min-width: 24%;
+    height: 49.5%;
+    border: 2px solid transparent;
+    color: #f8f2f2;
+}
+
+.m {
+    position: absolute;
+    top: 22.3%;
+    left: 5%;
+    right: 5%;
+    bottom: 68%;
+    width: 24%;
+    height: 49.5%;
+    border: 2px solid #00000004;
+}
+
+.c {
+    text-align: left;
+}
+
+.b, .c, .r, .f, .g, .t {
+    top: 0;
+    height: 40%;
+    border-radius: 2px;
+    max-width: 100%;
+    min-width: 100%;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+
+.d {
+    width: 80%;
+    padding: 5px;
+}
+
+.j {
+    padding: 10px;
+    border-radius: 50px 5px 25px 1px;
+    height: auto;
+    border: 1px solid black;
+    background-color: rgba(105, 231, 74, 0.089);
+}
+
+.wrapper {
+    position: absolute;
+    top: 29%;
+    left: 5%;
+    right: 5%;
+    height: 49.5%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    min-width: 24%;
+    color: #0e0d0d;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+textarea {
+    background-color: rgb(208, 207, 212);
+    text-align: right;
+}
+
+.z {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 79%;
+    left: 5%;
+    right: 5%;
+    height: 30%;
+    max-width: 24.4%;
+    min-width: 24.4%;
+    border-radius: 2px;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.bt {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 2px;
+    padding: 0;
+    border: none;
+    right: 2%;
+    top: 0;
+    max-width: 30%;
+    min-width: 30%;
+    height: 5%;
+    background-image: url('33.jpg');
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .l, .m, .wrapper, .z {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        border: 2px solid transparent;
+    }
+
+    .l, .m {
+        position: relative;
+        width: 100%;
+    }
+
+    .bt {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+a {
+    color: #faf8f8;
+}
+
+.h {
+    width: 340px;
+    height: 320px;
+}
+
+h1 {
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    color: #86f59e;
+}
+
+h3 {
+    color: #7324da;
+    padding: 0px;
+    margin: 0px;
+}
+
+h5 {
+    color: #0a0909;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+    margin-top: 1px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+    margin-top: 1px;
+}
+
+.i {
+    margin-left: 18px;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 2px;
+    width: 280px;
+}
+
+.card-header {
+    padding-bottom: 50px;
+    opacity: 1;
+    color: #f8f6f6;
+}
+
+.card-header::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #f8f6f6;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+}
+
+.card-content label {
+    color: #f8f6f6;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #f8f6f6;
+    outline: none;
+    color: #f8f6f6;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: #f8f6f6;
+    margin: 10px 0;
+}
+
+.card-footer a {
+    text-align: center;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    color: #f8f6f6;
+    text-decoration: none;
+}
+
+.s {
+
+    width: 237px;
+    height: 174px;
+    margin-left: 0px;
+}
