@@ -17,7 +17,7 @@ const QuemSomos = () => {
     useEffect(()=>{
       
       const getUsers = async () => {
-        const response = await fetch('http://localhost:3300/user/list')
+        const response = await fetch('http://localhost:3000/user/list')
         const data = await response.json()
         console.log(data.success)
         console.log(data.users)
@@ -38,7 +38,7 @@ const QuemSomos = () => {
         photo: event.target.photo.value
       }
       
-      const response = await fetch('http://localhost:3300/user',{
+      const response = await fetch('http://localhost:3000/user',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
