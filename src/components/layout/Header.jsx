@@ -1,18 +1,34 @@
 import './Header.css'
 import { NavLink } from 'react-router-dom'
-import Button from '../ui/Button'
+import Button from '../ui/Button' 
+import useUserStore from '../../store/userStore.js'
 
 const Header = () => {
+
+  const nameUser = useUserStore((state) => state.name)
+  const isLogged = useUserStore((state) => state.isLogged)
+  const loginUser = useUserStore((state) => state.login)
+  const logoutUser = useUserStore((state) => state.logout)
+
   return (
     <header>
-        <h1>Nosso Sonho</h1>
+        <h1>Coffee & Mountain - {nameUser}</h1>
         <nav>
             <ul>
-                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to='/'>Home</NavLink></li>
                 <li><NavLink to="/quem-somos">Quem Somos</NavLink></li>
                 <li><NavLink to="/contato">Contato</NavLink></li>
-                <li><Button variant="primary">login</Button></li>
-                <li><Button variant="secondary">cadastre-se</Button></li>
+                {
+                  isLogged ? 
+                    <li><Button variant="primary" onClick={() => logoutUser()}>Logout</Button></li>
+                  :
+                    <li><Button variant="primary" onClick={() => loginUser({
+                      name: "Sandro",
+                      email: "sandro@gmail.com",
+                      photo: "..."
+                    })}>Login</Button></li>
+                }
+                <li><Button variant="secondary">Cadastre-se</Button></li>
             </ul>
         </nav>
     </header>
